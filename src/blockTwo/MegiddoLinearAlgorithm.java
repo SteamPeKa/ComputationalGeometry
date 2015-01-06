@@ -60,6 +60,12 @@ public class MegiddoLinearAlgorithm implements MinimumCoveringCircle {
                 resultCircle = minCircleBySetAndAPoint(innerDots, currentDot);
             }
         }
+        //Из-за рандомизации алгоритм работает через раз, так что тут проверка и рекурсия.
+        for (final Dot dot : points) {
+            if (!resultCircle.isIn(dot)) {
+                return getMinimumCoveringCircle(points);
+            }
+        }
         return resultCircle;
     }
 
