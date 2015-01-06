@@ -59,7 +59,5 @@ public class CrossingNumberTest {
         assertTrue(new CrossingNumber().isPointInPolygon(new Dot(new double[]{-0.5, 0.5}), square));
         assertFalse(new CrossingNumber().isPointInPolygon(new Dot(new double[]{-3, 3}), square));
         assertFalse(new CrossingNumber().isPointInPolygon(new Dot(new double[]{4, 0}), square));
-
-
     }
 }

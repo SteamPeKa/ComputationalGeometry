@@ -43,7 +43,8 @@ public class Dot {
             result += coord;
             result += "; ";
         }
-        return result.substring(0, result.lastIndexOf(';') - 1) + ')';
-
+        return result.substring(0, result.lastIndexOf(';')) + ')';
     }
+
+
 }

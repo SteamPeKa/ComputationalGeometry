@@ -29,5 +29,9 @@ public class DotTest {
 
     }
 
+    @Test
+    public void testOut() {
+        System.out.println(new Dot(new double[]{1, 2, 3, 4, 5}));
+    }
 
 }
